@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_home"/>
+
+        <TextView
+            android:id="@+id/tvHome"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgHome"
+            android:gravity="center"
+            android:text="往事杂谈"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgMystory"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_mystory"/>
+
+        <TextView
+            android:id="@+id/tvMystory"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgMystory"
+            android:gravity="center"
+            android:text="我的故事"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgLook"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_record"/>
+
+        <TextView
+            android:id="@+id/tvLook"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgLook"
+            android:gravity="center"
+            android:text="浏览记录"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgMyInfo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_mine"/>
+
+        <TextView
+            android:id="@+id/tvMyInfo"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgMyInfo"
+            android:gravity="center"
+            android:text="个人信息"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/icon_setting"/>
+
+        <TextView
+            android:id="@+id/tvSeting"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgSetting"
+            android:gravity="center"
+            android:text="系统设置"
+            android:clickable="true"
+            android:textColor="#FFFFFF"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="30dp"
+        android:background="#F00"
+        android:text="退出"/>
+</LinearLayout>

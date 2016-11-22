@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#d0d0d0"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="8dp"
+        android:background="#FFFFFF"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_mine"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgPhoto">
+
+            <ImageView
+                android:id="@+id/imgSex"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/icon_woman"/>
+
+            <TextView
+                android:id="@+id/tvNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小妞爱跑堂"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imgPhoto"
+            android:text="3分钟前"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:text="北京"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvStory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#FFFFFF"
+        android:text="每到夏天，总让人想起无数的回忆............"
+        />
+
+    <Gallery
+        android:id="@+id/gvImg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        android:spacing="5dp"
+        android:unselectedAlpha="0.6">
+    </Gallery>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/imgTalk"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_talk"/>
+
+        <TextView
+            android:id="@+id/tvTalkNum"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:text="200+"/>
+
+        <ImageView
+            android:id="@+id/imgLove"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_heart"/>
+
+        <TextView
+            android:id="@+id/tvReadCount"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:text="200+"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTalkCount"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@mipmap/icon_commend"
+        android:gravity="center_vertical"
+        android:text="包含200条评论"/>
+</LinearLayout>

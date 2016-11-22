@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_mine"/>
+
+            <LinearLayout
+                android:id="@+id/mLinearLayOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/imgPhoto"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imaSex"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_man"/>
+
+                <TextView
+                    android:id="@+id/tvNickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_above="@+id/mLinearLayOut"
+                    android:layout_margin="5dp"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:text="昵称"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/imgPhoto"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/imgPhoto"
+                android:layout_toRightOf="@+id/imgPhoto"
+                android:text="3分钟前"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/mLinearLayOut"
+                android:layout_marginRight="10dp"
+                android:text="北京"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvStory"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:lines="4"
+            android:text="故事内容.............................."/>
+
+        <ImageView
+            android:id="@+id/imgstorypic"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:scaleType="center"
+            >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/btnTalk"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_talk"/>
+
+        <TextView
+            android:id="@+id/tvTalkNum"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:text="200+"/>
+
+        <ImageButton
+            android:id="@+id/btnLove"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_heart"/>
+
+        <TextView
+            android:id="@+id/tvLoveNum"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:text="200+"/>
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"/>
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_share"/>
+    </LinearLayout>
+
+</LinearLayout>

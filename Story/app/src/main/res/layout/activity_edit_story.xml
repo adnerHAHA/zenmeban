@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fkl.story.EditStoryActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/title_bg">
+        <ImageButton
+            android:id="@+id/toolbar_back"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back"
+            android:background="@mipmap/title_bg"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/toobar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="新的故事"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+        <ImageView
+            android:id="@+id/imgSend"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_send"
+            android:clickable="true"
+            android:paddingRight="5dp"/>
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/edStory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:hint="太多的事情无法解释......"
+        android:background="@drawable/editbackgroud"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/mm_11"/>
+
+</LinearLayout>
+        <Button
+            android:id="@+id/btnCarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+          android:text="选择照片"/>
+
+</LinearLayout>
+</LinearLayout>
